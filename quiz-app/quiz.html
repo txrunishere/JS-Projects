@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #212121;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .quiz-container {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      label {
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <h2 class="question">Question text</h2>
+
+      <ul>
+        <li>
+          <input type="radio" name="answer" class="answer" id="a" />
+          <label for="a" id="a_text">Option A</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" class="answer" id="b" />
+          <label for="b" id="b_text">Option B</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" class="answer" id="c" />
+          <label for="c" id="c_text">Option C</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" class="answer" id="d" />
+          <label for="d" id="d_text">Option D</label>
+        </li>
+      </ul>
+
+      <button style="margin-top: 5px;" id="submitBtn">Submit</button>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

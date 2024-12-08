@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .todo-inp {
+        width: 300px;
+        padding: 10px;
+        font-size: 1rem;
+        border: 2px solid #555;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        margin-right: 10px;
+      }
+
+      .todo-inp:focus {
+        outline: none;
+        border-color: #ff9800;
+      }
+
+      .todo-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff9800;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .todo-btn:hover {
+        background-color: #e68900;
+      }
+
+      .todo-tasks {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .todo-tasks li {
+        background-color: #333;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+      }
+
+      .todo-tasks li:hover {
+        background-color: #444;
+      }
+
+      .todo-tasks button {
+        background: none;
+        border: none;
+        color: #ff6b6b;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .todo-tasks button:hover {
+        color: #ff4a4a;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h1>TODO APP</h1>
+    <input type="text" class="todo-inp" placeholder="Enter a Task" />
+    <button class="todo-btn">Add Task</button>
+    <ul class="todo-tasks"></ul>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
