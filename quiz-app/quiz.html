@@ -5,17 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <style>
-      /* Reset some default styles */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
         font-family: Arial, sans-serif;
-        background-color: #212121;
-        color: #fff;
+        background-color: #f4f7fc;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,54 +16,65 @@
       }
 
       .quiz-container {
-        background-color: #333;
-        border-radius: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         padding: 20px;
         width: 100%;
         max-width: 400px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         text-align: center;
       }
 
-      h2 {
-        margin-bottom: 20px;
+      .question {
         font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #333;
       }
 
       ul {
         list-style-type: none;
         padding: 0;
-        margin-bottom: 20px;
       }
 
       li {
-        margin-bottom: 15px;
+        margin: 15px 0;
         text-align: left;
       }
 
-      input[type="radio"] {
+      .answer {
         margin-right: 10px;
-        cursor: pointer;
       }
 
       label {
         font-size: 1rem;
+        color: #333;
         cursor: pointer;
+        transition: color 0.3s;
       }
 
-      button {
+      label:hover {
+        color: #007bff;
+      }
+
+      #submitBtn {
         background-color: #007bff;
-        color: #fff;
+        color: white;
         border: none;
-        border-radius: 5px;
         padding: 10px 20px;
+        border-radius: 5px;
         font-size: 1rem;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        width: 100%;
+        margin-top: 20px;
+        transition: background-color 0.3s;
       }
 
-      button:hover {
+      #submitBtn:hover {
         background-color: #0056b3;
+      }
+
+      #submitBtn:active {
+        background-color: #004085;
       }
     </style>
   </head>
@@ -98,7 +101,7 @@
         </li>
       </ul>
 
-      <button style="margin-top: 5px;" id="submitBtn">Submit</button>
+      <button style="margin-top: 5px" id="submitBtn">Submit</button>
     </div>
 
     <script src="quiz.js"></script>
