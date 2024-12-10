@@ -5,11 +5,13 @@ A collection of projects built using core JavaScript, focusing on mastering arra
 ## Projects Included
 
 - ### Project 1: TODO App
-    - Description: Simple To-Do App: A basic JavaScript application to manage tasks with functionalities to add, delete, and organize your daily to-dos. Built using core JavaScript, HTML, and CSS.
-
+    - Simple To-Do App: A basic JavaScript application to manage tasks with functionalities to add, delete, and organize your daily to-dos. Built using core JavaScript, HTML, and CSS.
 
 - ### Project 2: Quiz App
-    - Description: Quiz App: A basic JavaScript application where users answer a series of questions and receive their score at the end. Built with core JavaScript to provide an interactive and educational experience.
+    - Quiz App: A basic JavaScript application where users answer a series of questions and receive their score at the end. Built with core JavaScript to provide an interactive and educational experience.
+
+- ### Functional Calculator
+    - Functional Calcualtor: A simple JavaScript-based calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Built using core JavaScript to provide a smooth and intuitive user experience.
 
 
 ## How to Use
