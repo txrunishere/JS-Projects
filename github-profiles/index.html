@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Profiles</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #212121;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+        margin: 0;
+      }
+
+      form {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #search {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      #main {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .card {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .card img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border: 4px solid #fff;
+      }
+
+      .card h2 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: #aaa;
+        margin-bottom: 15px;
+      }
+
+      .card ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+      }
+
+      .card ul li {
+        font-size: 14px;
+        color: #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card ul li span {
+        display: block;
+        font-size: 12px;
+        color: #61dafb;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <input type="text" id="search" placeholder="Search a Github User" aria-label="Search a Github User" />
+    </form>
+    <main id="main"></main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
