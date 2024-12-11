@@ -5,14 +5,20 @@ A collection of projects built using core JavaScript, focusing on mastering arra
 ## Projects Included
 
 - ### Project 1: TODO App
-    - Simple To-Do App: A basic JavaScript application to manage tasks with functionalities to add, delete, and organize your daily to-dos. Built using core JavaScript, HTML, and CSS.
+    - A basic JavaScript application to manage tasks with functionalities to add, delete, and organize your daily to-dos. Built using core JavaScript, HTML, and CSS.
 
 - ### Project 2: Quiz App
-    - Quiz App: A basic JavaScript application where users answer a series of questions and receive their score at the end. Built with core JavaScript to provide an interactive and educational experience.
+    - A basic JavaScript application where users answer a series of questions and receive their score at the end. Built with core JavaScript to provide an interactive and educational experience.
 
-- ### Functional Calculator
-    - Functional Calcualtor: A simple JavaScript-based calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Built using core JavaScript to provide a smooth and intuitive user experience.
+- ### Project 3: Functional Calculator
+    - A simple JavaScript-based calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Built using core JavaScript to provide a smooth and intuitive user experience.
 
+- ### Project 4: Github Profile Viewer
+    - The GitHub Profile Viewer is a simple web app that allows users to view key details of any GitHub profile by entering the username. It utilizes the GitHub API to fetch data dynamically and displays the following information:
+        - Profile Avatar
+        - Number of Followers
+        - Number of Following
+        - Total Public Repositories
 
 ## How to Use
 
