@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* General styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+      }
+
+      .container {
+        background-color: #333333;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      /* Password display area */
+      .display {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #444444;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .display input {
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1rem;
+        flex-grow: 1;
+        padding: 0 10px;
+      }
+
+      .display input:focus {
+        outline: none;
+      }
+
+      .copy-btn {
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+
+      .copy-btn:hover {
+        color: #1e90ff;
+      }
+
+      /* Password function area */
+      .pw-functions {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .form-control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      label {
+        font-size: 0.9rem;
+      }
+
+      input[type="number"] {
+        width: 60px;
+        border-radius: 4px;
+        border: 1px solid #666666;
+        padding: 5px;
+        background-color: #555555;
+        color: #ffffff;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1.2);
+        accent-color: #1e90ff;
+      }
+
+      /* Generate password button */
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #1e90ff;
+        color: #ffffff;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #156fcc;
+      }
+
+      button:active {
+        background-color: #0e4f9a;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121">
+    <div class="container">
+      <h1>Generate a Random Password</h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" readonly />
+        <i onclick="copypassword()" class="fa-regular fa-copy copy-btn"></i>
+      </div>
+      <div class="pw-functions">
+        <div class="form-control">
+          <label for="length">Password Length</label>
+          <input type="number" class="length" min="6" max="50" value="12"/>
+        </div>
+        <div class="form-control">
+          <label for="upper">Contain Upper Letters</label>
+          <input type="checkbox" class="upper" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Contain Lower Letters</label>
+          <input type="checkbox" class="lower" />
+        </div>
+        <div class="form-control">
+          <label for="number">Contain Number</label>
+          <input type="checkbox" class="number" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Contain Symbol</label>
+          <input type="checkbox" class="symbol" />
+        </div>
+      </div>
+      <br />
+      <button class="gen-password">Generate Password</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
