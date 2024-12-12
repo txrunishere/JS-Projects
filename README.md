@@ -20,6 +20,11 @@ A collection of projects built using core JavaScript, focusing on mastering arra
         - Number of Following
         - Total Public Repositories
 
+- ### Project 5: Password Generator
+    - A customizable password generator that allows users to create secure passwords based on their preferences. Users can:
+        - Set the password length.
+        - Include/exclude uppercase letters, lowercase letters, numbers, and symbols.
+
 ## How to Use
 
 1. Clone the repository:
