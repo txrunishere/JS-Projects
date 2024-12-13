@@ -25,6 +25,9 @@ A collection of projects built using core JavaScript, focusing on mastering arra
         - Set the password length.
         - Include/exclude uppercase letters, lowercase letters, numbers, and symbols.
 
+- ### Project 6: Quote Generator
+    - A simple app that displays a random quote along with the author's name. Users can also share the quote directly on Twitter using the built-in "Tweet" button.
+
 ## How to Use
 
 1. Clone the repository:

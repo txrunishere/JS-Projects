@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #212121;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background-color: #333;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      blockquote {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 1.5rem 0;
+        padding: 1rem;
+        background-color: #444;
+        border-left: 5px solid #333;
+        border-radius: 5px;
+        line-height: 1.6;
+      }
+
+      span {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        display: block;
+        color: #bbb;
+      }
+
+      button {
+        background-color: #444;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 1.1rem 0.5rem 0.5rem 0.5rem;
+        
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      button i {
+        margin-right: 0.5rem;
+      }
+
+      @media (max-width: 600px) {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        blockquote {
+          font-size: 1.2rem;
+        }
+
+        button {
+          width: 100%;
+          padding: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h2>Quote of the day</h2>
+      <blockquote class="quote-space">Loading...</blockquote>
+      <span class="writer-name">- Loading...</span>
+      <div>
+        <button onclick="getQuote(APIURL)">New Quote</button>
+        <button onclick="tweet()"><i class="fa-brands fa-twitter"></i> Tweet</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
