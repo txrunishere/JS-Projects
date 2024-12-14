@@ -28,6 +28,9 @@ A collection of projects built using core JavaScript, focusing on mastering arra
 - ### Project 6: Quote Generator
     - A simple app that displays a random quote along with the author's name. Users can also share the quote directly on Twitter using the built-in "Tweet" button.
 
+- ### Project 7: Notes App
+    - A simple Notes App that allows users to create and manage notes. Users can add notes with a title and delete them as needed.
+
 ## How to Use
 
 1. Clone the repository:

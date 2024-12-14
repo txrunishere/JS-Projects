@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App | 10 Days of JavaScript Projects</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #212121;
+        color: #333;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      /* Main Container */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Notes Input Section */
+      .notes-container {
+        margin-bottom: 20px;
+      }
+
+      .notes-container input[type="text"],
+      .notes-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .notes-container textarea {
+        height: 100px;
+        resize: none;
+      }
+
+      .save-note {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .save-note:hover {
+        background-color: #0056b3;
+      }
+
+      /* Notes List Section */
+      .notes-list {
+        margin-top: 20px;
+      }
+
+      .notes-list h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .saved-notes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      /* Individual Note Card */
+      .note-card {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: calc(33% - 10px); /* Adjust for 3-column layout */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .note-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .note-card p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .note-card button {
+        display: inline-block;
+        background-color: #e74c3c;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .note-card button:hover {
+        background-color: #c0392b;
+      }
+
+      /* Style for the note container */
+      .note {
+        margin: 10px 0;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+
+      .note h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .note p {
+        margin: 10px 0;
+        font-size: 1em;
+        color: #555;
+      }
+
+      /* Style for the delete button */
+      .note button {
+        padding: 5px 10px;
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Hover effect for the delete button */
+      .note button:hover {
+        background-color: #ff1a1a;
+      }
+
+      /* Focus effect for accessibility */
+      .note button:focus {
+        outline: 2px solid #ff1a1a;
+        outline-offset: 2px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .note-card {
+          width: 100%; /* Stacks notes in a single column */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="notes-container">
+        <input class="note-title" type="text" placeholder="Enter Note Title" />
+        <textarea
+          class="note-text"
+          placeholder="Write your Note here..."
+        ></textarea>
+        <button class="save-note">Save Note</button>
+      </div>
+      <div class="notes-list">
+        <h2>Your Notes</h2>
+        <div class="saved-notes"></div>
+      </div>
+    </div>
+    <script src="notes-app.js"></script>
+  </body>
+</html>
+<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos delectus accusantium ab, accusamus at quia quibusdam magnam nulla modi nihil. Ipsum sed laborum maxime asperiores nesciunt tempore, nihil velit eos possimus ea vel amet earum sapiente quos quibusdam debitis atque incidunt corporis adipisci. Perferendis quibusdam ducimus veniam delectus quasi distinctio, vero ea ipsa tenetur voluptatum? -->
