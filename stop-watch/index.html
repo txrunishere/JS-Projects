@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <style>
+      /* General Reset */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .display {
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      .controls {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .startBtn {
+        background: #27ae60;
+      }
+
+      .startBtn:hover {
+        background: #2ecc71;
+      }
+
+      .stopBtn {
+        background: #e74c3c;
+      }
+
+      .stopBtn:hover {
+        background: #e84118;
+      }
+
+      .resetBtn {
+        background: #f39c12;
+      }
+
+      .resetBtn:hover {
+        background: #f1c40f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stop Watch</h1>
+
+    <div class="container">
+      <div class="display">00:00:00:00</div>
+      <div class="controls">
+        <button class="startBtn" onclick="start()">Start</button>
+        <button class="stopBtn" onclick="stopTime ()">Stop</button>
+        <button class="resetBtn" onclick="reset()">reset</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
