@@ -32,7 +32,7 @@ A collection of projects built using core JavaScript, focusing on mastering arra
     - A simple Notes App that allows users to create and manage notes. Users can add notes with a title and delete them as needed.
 
 - ### Project 8: Stop Watch
-    -A simple and functional stopwatch app with the ability to:
+    - A simple and functional stopwatch app with the ability to:
         - Start the timer.
         - Stop the timer.
         - Reset the timer.
