@@ -37,6 +37,10 @@ A collection of projects built using core JavaScript, focusing on mastering arra
         - Stop the timer.
         - Reset the timer.
 
+- ### Project 9: Snake Game
+    - A classic Snake Game where you navigate the snake to collect food and grow longer. The game features:
+        - Real-time movement control using keyboard input.
+        - An inbuilt Reset Button to restart the game.
 
 ## How to Use
 
