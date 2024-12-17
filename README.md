@@ -42,6 +42,9 @@ A collection of projects built using core JavaScript, focusing on mastering arra
         - Real-time movement control using keyboard input.
         - An inbuilt Reset Button to restart the game.
 
+- ### Project 10: Weather App
+    - A simple Weather Forecast App that provides real-time weather details for any city using Rapid API. The app features a clean, responsive design built with Bootstrap.
+
 ## How to Use
 
 1. Clone the repository:
