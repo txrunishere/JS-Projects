@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        width: 300px;
+      }
+
+      .display-div {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #444;
+        border: 2px solid #555;
+        border-radius: 5px;
+      }
+
+      button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 10px 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #4caf50;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .increment-btn {
+        background-color: #4caf50;
+      }
+
+      .increment-btn:hover {
+        background-color: #45a049;
+      }
+
+      .decrement-btn {
+        background-color: #f44336;
+      }
+
+      .decrement-btn:hover {
+        background-color: #e53935;
+      }
+
+      .reset-btn {
+        background-color: #2196f3;
+      }
+
+      .reset-btn:hover {
+        background-color: #1e88e5;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <div class="container">
+      <div class="display-div">0</div>
+      <button class="increment-btn">Increment</button>
+      <button class="decrement-btn">Decrement</button>
+      <button class="reset-btn">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
