@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum Generator</title>
+    <style>
+      body {
+        background-color: #121212;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #1e1e1e;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 35px rgba(255, 255, 255, 0.089);
+      }
+
+      label {
+        display: block;
+        margin: 15px 0 5px;
+        font-weight: bold;
+      }
+
+      input[type="range"] {
+        width: 100%;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: #2c2c2c;
+        color: #ffffff;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        background-color: #008000;
+        color: white;
+        border: none;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #00b300;
+      }
+
+      .output {
+      margin-top: 2rem;
+      border: 2px solid rgba(255, 0, 0, 0.699);
+      padding: 1.5rem;
+      border-radius: 10px;
+      background-color: #2a2a2a;
+      text-align: center;
+      color: white;
+      overflow: auto;
+    }
+
+      div {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem Ipsum Generator</h1>
+
+    <div class="container">
+      <label for="paragraphs">Paragraphs:</label>
+      <input type="range" id="paragraphs" min="1" max="10" value="1" />
+      <p class="num">1</p>
+
+      <label for="words">Words per Paragraph:</label>
+      <input type="range" id="words" min="5" max="100" value="10" />
+      <p class="num">10</p>
+
+      <label for="tag">Tag:</label>
+      <select name="tag" id="tag">
+        <option selected disabled>Select Tag</option>
+        <option value="<h1>">h1</option>
+        <option value="<h2>">h2</option>
+        <option value="<h3>">h3</option>
+        <option value="<h4>">h4</option>
+        <option value="<h5>">h5</option>
+        <option value="<h6>">h6</option>
+        <option value="<p>">p</option>
+      </select>
+
+      <button id="submitBtn">Generate Lorem Ipsum</button>
+
+      <div class="output"></div>
+    </div>
+  </body>
+  <script>
+    const nums = document.querySelectorAll(".num");
+    let option = null;
+
+    document.querySelectorAll("input[type='range']").forEach((input) => {
+      input.addEventListener("input", function (e) {
+        if (input.getAttribute("id") === "paragraphs") {
+          nums[0].innerText = input.value;
+        } else {
+          nums[1].innerText = input.value;
+        }
+      });
+    });
+
+    document.querySelector("#tag").addEventListener("change", (e) => {
+      option = e.target.value;
+    });
+
+    document.getElementById("submitBtn").addEventListener("click", (e) => {
+      if (option && nums[0] && nums[1])
+        generateContent(option, nums[0], nums[1]);
+    });
+
+    function generateContent(option, paragraph, words) {
+      document.querySelector(".output").innerHTML = ""
+      const content = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra nibh. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Sagittis purus sit amet volutpat Consequat mauris. Duis ultricies lacus sed turpis tincidunt id. Consequat interdum varius sit amet mattis vulputate. Enim sed faucibus turpis in eu. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Nulla pharetra diam sit amet nisl suscipit. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Dis parturient montes nascetur ridiculus mus. Justo nec ultrices dui sapien eget. Enim tortor at auctor urna nunc. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc.`.split(" ");
+
+      for (let i = 0; i < parseInt(paragraph.innerText); i++) {
+        console.log(i);
+        let line = "";
+        for (let j = 0; j < parseInt(words.innerText); j++) {
+          line = line + " " + content[j];
+          console.log(j, line);
+        }
+        document.querySelector(".output").innerHTML += `
+          ${option}${line}${option}
+          `;
+      }
+    }
+  </script>
+</html>
